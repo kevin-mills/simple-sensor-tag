@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="SensorTag.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SensorTag"
+    FontSize="30"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="50">
+            <Button x:Name="button" Content="Find SensorTag" FontSize="30" 
+                    HorizontalAlignment="Center" Margin="12" Click="button_Click" />
+            
+            <TextBlock Text="Accelerometer" Padding="0,12,0,0" />
+            <TextBlock x:Name="AccelerometerTextBlock" Text=" " />
+
+
+            <TextBlock Text="Magnetometer" Padding="0,12,0,0" />
+            <TextBlock x:Name="MagnetometerTextBlock" Text=" " />
+
+
+            <TextBlock Text="Gyroscope" Padding="0,12,0,0" />
+            <TextBlock x:Name="GyroscopeTextBlock" Text=" " />
+
+
+            <TextBlock Text="Humidity" Padding="0,12,0,0" />
+            <TextBlock x:Name="HumidityTextBlock"  Text=" " />
+
+            
+            <TextBlock Text="Pressure" Padding="0,12,0,0" />
+            <TextBlock x:Name="PressureTextBlock"  Text=" " />
+
+
+            <TextBlock Text="Target Temperature" Padding="0,12,0,0" />
+            <TextBlock x:Name="TargetTemperatureTextBlock"  Text=" " />
+
+
+            <TextBlock Text="Ambient Temperature" Padding="0,12,0,0" />
+            <TextBlock x:Name="AmbientTemperatureTextBlock"  Text=" " />
+            
+        </StackPanel>
+    </Grid>
+</Page>
